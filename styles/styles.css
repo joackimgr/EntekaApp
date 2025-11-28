@@ -56,59 +56,74 @@ nav {
     align-items: center;
 }
 
-.section form {
+.section #logInForm {
     display: flex;
     flex-direction: column;
     background-color: #D9D9D9;
     justify-content: center;
     align-items: center;
     width: 450px;
-    height: 500px;
+    height: 518px;
     margin: 20px auto;
     border-radius: 1.6rem;
     gap: 16px;
 }
 
-#logoOnForm {
+.section #signUpForm {
+    display: none;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 1.6rem;
+    gap: 16px;
+}
+
+#logoOnLogInForm, #logoOnSignUpForm {
     margin-top: 20px;
 }
 
-input[type = "text"], input[type = "password"] {
+input[type = "text"], input[type = "password"], input[type = "email"] {
     width: 250px;
     border: none;
     border-radius: 1.1rem;
-    height: 55px;
+    height: 37px;
     background-color: #C7C6C6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-input[type = "text"]:focus, input[type = "password"]:focus {
+input[type = "text"]:focus, input[type = "password"]:focus, input[type = "email"]:focus {
     outline: none;
     padding-left: 14px;
+    box-sizing: border-box;
 }
 
-#signUp {
-    text-decoration: none;
+#signUp, #logIn {
+    cursor: pointer;
+    color: #0000FF;
 }
 
-form p {
+#logInForm p, #signUpForm p {
     margin-top: 10px;
+    font-size: 20px;
 }
 
 input[type = "submit"] {
     width: 120px;
-    height: 60px;
+    height: 55px;
     font-size: 20px;
-    border-radius: 0.6rem;
+    border-radius: 1.2rem;
     border: none;
     background-color: #B5B5B5;
     margin-bottom: 18px;
     cursor: pointer;
 }
 
-form label {
+#logInForm label, #signUpForm label {
     font-size: 23px;
 }
 
-form p {
-    font-size: 20px;
-}
