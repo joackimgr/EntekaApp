@@ -29,15 +29,27 @@
         </div>
       </nav>
       <div class="section">
-        <form action="post">
-            <img src="./images/EntekaLogo.png" alt="EntekaLogo" width="120px" height="120px" id="logoOnForm">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <p>Don't have an account? <a href="" id="signUp"><span>Sign Up!</span></a></p>
+        <form action="post" id="logInForm">
+            <img src="./images/EntekaLogo.png" alt="EntekaLogo" width="120px" height="120px" id="logoOnLogInForm">
+            <label for="logInUsername">Username</label>
+            <input type="text" name="username" id="logInUsername" required>
+            <label for="logInPassword">Password</label>
+            <input type="password" name="password" id="logInPassword" required>
+            <p>Don't have an account? <span id="signUp">Sign Up!</span></p>
             <input type="Submit" value="Login">
         </form>
+        <form action="post" id="signUpForm">
+            <img src="./images/EntekaLogo.png" alt="EntekaLogo" width="120px" height="120px" id="logoOnSignUpForm">
+            <label for="signUpUsername">Username</label>
+            <input type="text" name="username" id="signUpUsername" required>
+            <label for="signUpEmail">Email</label>
+            <input type="email" name="email" id="signUpEmail" required>
+            <label for="signUpPassword">Password</label>
+            <input type="password" name="password" id="signUpPassword" required>
+            <p>Already have an account? <span id="logIn">Log In!</span></p>
+            <input type="Submit" value="Sign Up">
+        </form>
       </div>
+      <script src="scripts/script.js"></script>
 </body>
 </html>
