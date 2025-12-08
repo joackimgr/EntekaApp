@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #646A84;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#appLogo {
+    width: 60px;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #474E68;
+    border-radius: 2rem;
+    margin: 11px 11px 0px 11px;
+    flex-shrink: 0;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.left .text p {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.settings , .profile, .logo {
+    cursor: pointer;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 11px;
+    gap: 11px;
+    flex: 1;
+}
+
+.chats, .welcome {
+    background-color: #474E68;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chats .noChats {
+    color: white;
+}
+
+.welcome .welcomeText {
+    font-size: 50px;
+    box-sizing: border-box;
+    line-height: 0.3;
+    color: white;
+    font-weight: 300;
+}
+
+.welcome .startChatBtn button {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #646A84;
+    color: white;
+    width: auto;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 1rem;
+    padding: 0px 11px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.welcome .startChatBtn button:hover {
+    background-color: #5c627b;
+
+}
