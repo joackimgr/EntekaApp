@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Enteka App</title>
+    <title>Enteka</title>
 </head>
 <body>
       <nav>
@@ -29,16 +29,16 @@
         </div>
       </nav>
       <div class="section">
-        <form action="post" id="logInForm">
+        <form action="" id="logInForm">
             <img src="./images/EntekaLogo.png" alt="EntekaLogo" width="120px" height="120px" id="logoOnLogInForm">
             <label for="logInUsername">Username</label>
             <input type="text" name="username" id="logInUsername" required>
             <label for="logInPassword">Password</label>
             <input type="password" name="password" id="logInPassword" required>
             <p>Don't have an account? <span id="signUp">Sign Up!</span></p>
-            <input type="Submit" value="Login">
+            <input type="Submit" value="Login" id="logInbtn">
         </form>
-        <form action="post" id="signUpForm">
+        <form action="" id="signUpForm">
             <img src="./images/EntekaLogo.png" alt="EntekaLogo" width="120px" height="120px" id="logoOnSignUpForm">
             <label for="signUpUsername">Username</label>
             <input type="text" name="username" id="signUpUsername" required>
@@ -47,7 +47,7 @@
             <label for="signUpPassword">Password</label>
             <input type="password" name="password" id="signUpPassword" required>
             <p>Already have an account? <span id="logIn">Log In!</span></p>
-            <input type="Submit" value="Sign Up">
+            <input type="Submit" value="Sign Up" id="signUpBtn">
         </form>
       </div>
       <script src="scripts/script.js"></script>
