@@ -1,14 +1,27 @@
-let signUpBtn = document.getElementById("signUp");
-let logInBtn = document.getElementById("logIn");
+let signUpSpan = document.getElementById("signUp");
+let logInSpan = document.getElementById("logIn");
 let logInForm = document.getElementById("logInForm");
 let signUpForm = document.getElementById("signUpForm");
 
-signUpBtn.addEventListener("click", () => {
+
+signUpSpan.addEventListener("click", () => {
     signUpForm.style.display = "flex";
     logInForm.style.display = "none";
 })
 
-logInBtn.addEventListener("click", () => {
+logInSpan.addEventListener("click", () => {
     logInForm.style.display = "flex";
     signUpForm.style.display = "none";
+})
+
+logInForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    window.location.href = "../pages/home.html";
+})
+
+signUpForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    window.location.href = "../pages/home.html";
 })
