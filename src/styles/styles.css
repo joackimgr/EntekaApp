@@ -46,6 +46,12 @@ nav {
     cursor: pointer;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .section {
     background-color: #474E68;
     height: 100%;
@@ -54,6 +60,8 @@ nav {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 600px;
 }
 
 .section #logInForm {

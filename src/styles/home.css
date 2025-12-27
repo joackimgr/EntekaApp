@@ -95,3 +95,9 @@ nav {
     background-color: #5c627b;
 
 }
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
