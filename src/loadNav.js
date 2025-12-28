@@ -1,7 +1,10 @@
 import logo from './images/EntekaLogo.png';
 import settings from './images/settings_icon.png';
 import profile from './images/profile_icon.png';
-
+import chat from './images/chat_icon.png';
+import { clearLeft } from './clearLeft';
+import { clearContent } from './clearContent';
+import { loadSettings } from './loadSettings';
 
 function loadLeft() {
     const leftDiv = document.createElement('div');
@@ -11,15 +14,15 @@ function loadLeft() {
     logoDiv.classList.add('logo');
     const logoImg = document.createElement('img');
     logoImg.src = logo;
-    logoImg.setAttribute('id', 'appLogo');
-    logoImg.setAttribute('alt', 'EntekaLogo');
+    logoImg.id = 'appLogo';
+    logoImg.alt = 'EntekaLogo';
 
 
     const textDiv = document.createElement('div');
     textDiv.classList.add('text');
     const logoText = document.createElement('p');
     logoText.innerText = "ENTEKA";
-    logoText.setAttribute('id', 'logoText');
+    logoText.id = 'logoText';
 
     logoDiv.appendChild(logoImg);
     textDiv.appendChild(logoText);
@@ -36,15 +39,22 @@ function loadRight() {
     settingsDiv.classList.add('settings');
     const settingsImg = document.createElement('img');
     settingsImg.src = settings;
-    settingsImg.setAttribute('width', '50px');
-    settingsImg.setAttribute('height', '50px');
+    settingsImg.width = 50;
+    settingsImg.height = 50;
+
+    settingsDiv.addEventListener("click", () => {
+        clearLeft();
+        clearContent();
+        loadSettings();
+        settingsImg.src = chat;
+    })
 
     const profileDiv = document.createElement('div');
     profileDiv.classList.add('profile');
     const profileImg = document.createElement('img');
     profileImg.src = profile;
-    profileImg.setAttribute('width', '45px');
-    profileImg.setAttribute('height', '45px');
+    profileImg.width = 45;
+    profileImg.height = 45;
 
     settingsDiv.appendChild(settingsImg);
     profileDiv.appendChild(profileImg);
