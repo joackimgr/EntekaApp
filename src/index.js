@@ -1,7 +1,7 @@
 import "./styles/styles.css";
 
-import { loadNav } from "./loadNav.js";
+import { loadFirstNav } from "./loadFirstNav.js";
 import { loadSection } from "./loadsection.js";
 
-loadNav();
+loadFirstNav();
 loadSection();
