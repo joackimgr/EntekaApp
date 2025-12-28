@@ -1,5 +1,7 @@
 import sad from '../images/sad_emoji.png'
 import profile from "../images/profile_icon.png";
+import { clearContent } from '../clearContent';
+import { loadSendMessage } from './loadSendMessage';
 
 function loadChats() {
     const chatsDiv = document.createElement('div');
@@ -53,6 +55,11 @@ function loadWelcome() {
     const startChatBtn = document.createElement('button');
     startChatBtn.textContent = 'Start a new chat!';
 
+    startChatBtn.addEventListener("click", () => { 
+        clearContent();
+        loadSendMessage();
+    })
+
     usrIconDiv.appendChild(usrIconImg);
     welcomeTxtDiv.appendChild(welcomeText);
     startChatBtnDiv.appendChild(startChatBtn);
@@ -73,4 +80,4 @@ function loadHomeSection() {
     content.append(section);
 }
 
-export {loadHomeSection};
+export { loadHomeSection };
