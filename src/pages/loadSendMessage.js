@@ -71,13 +71,14 @@ function loadSuggestions() {
 }
     
     function loadSendMessage() {
-            const recipient = loadRecipient();
-            const suggestions = loadSuggestions();
-            const welcome = document.querySelector('.welcome');
-            welcome.classList.remove('welcome');
-            welcome.classList.add('newMessage');
+        const recipient = loadRecipient();
+        const suggestions = loadSuggestions();
+        const welcome = document.querySelector('.welcome');
+        welcome.innerHTML = ''; 
+        welcome.classList.remove('welcome');
+        welcome.classList.add('newMessage');
 
-            welcome.append(recipient, suggestions);
+        welcome.append(recipient, suggestions);
     }    
     
     export { loadSendMessage };
