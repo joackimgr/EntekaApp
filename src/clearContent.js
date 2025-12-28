@@ -1,4 +1,6 @@
 export function clearContent() {
-    const welcome = document.querySelector('.welcome');
-    welcome.innerHTML = '';
+    const content = document.querySelector('.welcome, .newMessage');
+    if (content) {
+        content.innerHTML = '';
+    }
 };
